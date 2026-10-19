@@ -760,6 +760,7 @@ The WebUI is still coupled to Hermes Agent internals for runtime execution, prov
 **Start here**
 - [`docs/why-hermes.md`](docs/why-hermes.md) — why Hermes, the mental model, and a detailed comparison to Claude Code / Codex / OpenCode / Cursor
 - [`docs/onboarding.md`](docs/onboarding.md) — first-run wizard, provider setup, local model server Base URLs, and safe re-runs
+- [`docs/local-models-setup.md`](docs/local-models-setup.md) — run WebUI against local GGUF models served by `docs/start.py` (llama-server on `http://127.0.0.1:8484/v1`); model inventory in [`docs/docs/models.md`](docs/docs/models.md)
 - [`docs/troubleshooting.md`](docs/troubleshooting.md) — diagnostic flows for common failures (e.g. "AIAgent not available")
 
 **Using & customizing**

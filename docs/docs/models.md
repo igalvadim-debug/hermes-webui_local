@@ -440,6 +440,34 @@ D:\ComfyUiCuda\models\vae\minimax_h3_video_vae_fp16.safetensors
 D:\ComfyUiCuda\models\vae\qwen_image_vae.safetensors
 D:\ComfyUiCuda\models\vitmatte\model.safetensors
 
+# ============================================================================
+# LLM-/GGUF-Modelle für Hermes WebUI (gestartet über docs/start.py)
+# ----------------------------------------------------------------------------
+# Diese Dateien sind die lokalen Chat-Modelle. start.py fährt daraus einen
+# OpenAI-kompatiblen llama-server auf http://127.0.0.1:8484/v1
+# (Port 8484 hartkodiert; Modell per Nummer 1-7, Kontext per --ctx N).
+# In Hermes WebUI als Self-hosted/Custom-Provider mit Base URL
+# http://127.0.0.1:8484/v1 eintragen (API-Key leer). Ausführliche Anleitung:
+# siehe docs/local-models-setup.md
+#
+# [1] Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf   -> Coding, GPU (-ngl 99)
+D:\claudeAgent\Coder\models\Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf
+# [2] Qwopus3.5-4B-Coder-MTP-Q8_0.gguf        -> Coding (MTP), GPU
+D:\claudeAgent\Coder\models\Qwopus3.5-4B-Coder-MTP-Q8_0.gguf
+# [3] gemma-4-E4B-it-heretic-Q4_K_M.gguf      -> Allgemein, GPU
+D:\claudeAgent\Coder\models\gemma-4-E4B-it-heretic-Q4_K_M.gguf
+# [4] Qwen3.8-2B-BF16.gguf                    -> Klein/schnell, grosser Kontext
+D:\claudeAgent\Coder\models\Qwen3.8-2B-BF16.gguf
+# [5] Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf -> Vision, braucht mmproj
+D:\SillyTavernNeurogen\kobold\models\Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf
+D:\SillyTavernNeurogen\kobold\models\mmproj-Gemma-4-E2B-Uncensored-HauhauCS-Aggressive-f16.gguf
+# [6]/[7] MoE-35B (A3B) -> starten mit --fit on (CPU/GPU-Mix bei 8 GB VRAM)
+C:\Users\Startklar\.lmstudio\models\lmstudio-community\Qwopus-MoE-35B-A3B-APEX-I-Mini\Qwopus-MoE-35B-A3B-APEX-I-Mini.gguf
+C:\Users\Startklar\.lmstudio\models\lmstudio-community\Qwen3.6-35B-A3B-abliterated.IQ4_XS\Qwen3.6-35B-A3B-abliterated.IQ4_XS.gguf
+# Embedding-Server (eigener Build, Port 8512, /v1/embeddings) fuer LanceDB-Index
+D:\claudeAgent\Coder\models\embeddinggemma-2-Q8_0\embeddinggemma-2-Q8_0.gguf
+# ============================================================================
+
 # --- Дополнение (vervollständigt): строки из docs/models.txt, которых не хватало выше ---
 C:\Users\Startklar\.lmstudio\models\lmstudio-community\L3-8B-Stheno-v3.2-Q4_K_M\L3-8B-Stheno-v3.2-Q4_K_M.gguf
 C:\Users\Startklar\.lmstudio\models\lmstudio-community\Mistral-7B-Instruct-v0.3-abliterated.Q5_K_S\Mistral-7B-Instruct-v0.3-abliterated.Q5_K_S.gguf
