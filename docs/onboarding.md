@@ -180,6 +180,11 @@ Then use `http://api.local:<port>/v1` as the Base URL. The alias avoids writing
 `localhost` in WebUI config where it would resolve to the container loopback
 instead of the host service.
 
+For a llama.cpp `llama-server` started by this repo's local launcher
+(`docs/start.py`, chat endpoint `http://127.0.0.1:8484/v1`), see
+[`local-models-setup.md`](local-models-setup.md) for the exact Base URLs and the
+Windows/WSL/Docker combinations.
+
 The wizard probes `<base-url>/models` before saving. A successful probe fills
 the model dropdown. A failed probe blocks the setup step and shows an inline
 error such as DNS failure, connection refused, timeout, HTTP error, or
